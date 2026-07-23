@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/13. Project/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="library-option">
+                    <img src="/13. Project/assets/library_icon.png" alt="">
+                    <a href="">Your Library</a>
+                    <span class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <img src="/13. Project/assets/forward_icon.png" alt="">
+                    </span>
+                </div>
+                <div class="lib-box">
+                    <div class="box-1">
+                        <div class="box-p1">Create your first playlist</div>
+                        <div class="box-p2">It's easy, we'll help you</div>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box-2">
+                        <div class="box-p1">Let's find some podcasts</div>
+                        <div class="box-p2">We'll keep you updated on new episodes</div>
+                        <button class="badge2">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                <img src="./assets/backward_icon.png" style="opacity: 0.7;" alt="">
+                <img class="hide" src="./assets/forward_icon.png" alt="">
+                </div>
+                <div class="sticky-nav-options">
+                <button class="badge explore-premium hide">Explore Premium</button>
+                <button class="badge dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 0.3rem;"></i>Install App</button>
+                <i class="fa-regular fa-user" style="padding-top: 1rem;"></i>
+                </div>
+            </div>
+            <div class="cards">
+                <h2 style="margin-left: 2rem;">Recently Played</h2>
+                <br>
+                <br>
+                <div class="cards-container">
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/fifa.jpg" alt="">
+                            <h4>DNA (More Than A Game)</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Andrea Bocelli, David Guetta, EJAE, Megan Thee Stallion</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                                <br>
+                <br>
+                <br>
+                <div class="cards-section2">
+                <div class="outer">
+                <div class="original">
+                    <h2 style="margin-left: 2rem;">Spotify original & exclusive podcasts</h2>
+                </div>
+                <div class="inner">
+                    <p style="font-weight: 700; opacity: 0.5; font-size: 14px;">View all</p>
+                </div>
+                </div>
+                <br>
+                <div class="cards-container1">
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/powerof positive.jpg" alt="">
+                            <h4>The Power of Positive Thinking</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>2026 &bull; Norman Vincent Peale</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/thinkandgrow.jpg" alt="">
+                            <h4>Think and Grow Rich</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>2016 &bull; Napoleon Hill</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/tedtalks.jpg" alt="">
+                            <h4>TedTalks</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>2013 &bull; Amanda Palmer</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/meditations.jpg" alt="">
+                            <h4>Meditations - Audiobook</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>2024 &bull; Marcus Aurelius</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/podcasts.jpg" alt="">
+                            <h4>The Podcasts Marketing</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>2022 &bull; Simone Beretta</p>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/summerland.jpg" alt="">
+                            <h4>Summerland, 1992</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>2023 &bull; Podcasts(OSL)</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="cards-section3">
+                <div class="outer">
+                <div class="original">
+                    <h2 style="margin-left: 2rem;">Featured Charts</h2>
+                </div>
+                <div class="inner">
+                    <p style="font-weight: 700; opacity: 0.5; font-size: 14px;">View all</p>
+                </div>
+                </div>
+                <br>
+                <div class="cards-container1">
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/top 50 weekly.jpg" alt="">
+                            <h4>Top 50 - Global</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Your weekly updates of the most played tracks</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/top-50-weekly-pakistan.jpg" alt="">
+                            <h4>Top 50 - Pakistan</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Your weekly updates of the most played tracks</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/card1img.jpeg" alt="">
+                            <h4>Top 50 - Global</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Your daily updates of the most played tracks</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/pakistan.jpg" alt="">
+                            <h4>Top 50 - Pakistan</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Your daily updates of the most played tracks</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/india.jpg" alt="">
+                            <h4>Top 50 - India</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Your daily updates of the most played tracks</p>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="card cardhover">
+                        <div class="card1">
+                            <img src="./assets/usa.jpg" alt="">
+                            <h4>Top 50 - USA</h4>
+                            <div style="display: flex; flex-wrap: wrap;">
+                            <p>Your daily updates of the most played tracks</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                
+                </div>
+            </div>
+            <footer>
+                <div class="outer-line">
+                    <div class="line"></div>
+                </div>
+            </footer>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album1">
+                    <div class="image-album"><img src="./assets/fifa.jpg" alt=""></div>
+                    <div class="title-album">
+                            <div class="title-album1">
+                                <div><p style="font-size: 0.8rem; font-weight: 500;">DNA(More Than A Game)</p></div>
+                                <div><p class="metro" style="font-size: 0.8rem; font-weight: 400; opacity: 0.6;">Andrea Bocelli, David Guetta</p></div>
+                            </div>
+                    </div>
+                    <div class="add-icon">
+                        <div class="add-icon1">
+                            <i class="bi bi-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+            <div class="playback-icons">
+                <div><img src="./assets/player_icon1.png"  style="height: 1rem; width: 1rem;" alt=""></div>
+                <div><img src="./assets/player_icon2.png" style="height: 0.8rem; width: 0.8rem;" alt=""></div>
+                <div><img src="./assets/player_icon3.png" style="height: 1.8rem; width: 1.8rem;" alt=""></div>
+                <div><img src="./assets/player_icon4.png" style="height: 0.8rem; width: 0.8rem;" alt=""></div>
+                <div><img src="./assets/player_icon5.png" style="height: 1rem; width: 1rem;" alt=""></div>
+            </div>
+            <div class="playback-bar">
+                <span style="opacity: 0.6; font-size: 0.7rem;" class="curr-time" >0:00</span>
+                <input type="range" min="0" max="100" class="progress-bar">
+                <span style="opacity: 0.6; font-size: 0.7rem;" class="tot-time">3:33</span>
+            </div>
+            </div>
+            <div class="controls">
+                <div class="controls1">
+                <div><svg data-encore-id="icon" role="img" aria-hidden="true" class="e-10451-icon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797M10.5 8.118l-2.619-2.62L4.74 9.075 2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045z"></path></svg></div>
+                <div><svg data-encore-id="icon" role="img" aria-hidden="true" class="e-10451-icon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M15 15H1v-1.5h14zm0-4.5H1V9h14zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5m2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2z"></path></svg></div>
+                <div><svg data-encore-id="icon" role="img" aria-hidden="true" class="e-10451-icon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5zM4 15H2v-1.5h2z"></path><path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"></path></svg></div>
+                <div><svg data-encore-id="icon" role="presentation" aria-label="Volume medium" aria-hidden="false" class="e-10451-icon" id="volume-icon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-informative-smaller); --encore-icon-width: var(--encore-graphic-size-informative-smaller);"><path d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.64 3.64 0 0 1-1.33-4.967 3.64 3.64 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.14 2.14 0 0 0 0 3.7l5.8 3.35V2.8zm8.683 6.087a4.502 4.502 0 0 0 0-8.474v1.65a3 3 0 0 1 0 5.175z"></path></svg></div>
+                <div class="input-range1"><input class="input-range" type="range" min="0" max="10"></div>
+                <div><svg data-encore-id="icon" role="img" aria-hidden="true" class="e-10451-icon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16z"></path><path d="M15.25 9.007a.75.75 0 0 1 .75.75v4.493a.75.75 0 0 1-.75.75H9.325a.75.75 0 0 1-.75-.75V9.757a.75.75 0 0 1 .75-.75z"></path></svg></div>
+                <div><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3C0.25 2.0335 1.0335 1.25 2 1.25H5.375V2.75H2C1.86193 2.75 1.75 2.86193 1.75 3V5.42857H0.25V3ZM14 2.75H10.625V1.25H14C14.9665 1.25 15.75 2.0335 15.75 3V5.42857H14.25V3C14.25 2.86193 14.1381 2.75 14 2.75ZM1.75 10.5714V13C1.75 13.1381 1.86193 13.25 2 13.25H5.375V14.75H2C1.0335 14.75 0.25 13.9665 0.25 13V10.5714H1.75ZM14.25 13V10.5714H15.75V13C15.75 13.9665 14.9665 14.75 14 14.75H10.625V13.25H14C14.1381 13.25 14.25 13.1381 14.25 13Z" fill="currentColor"></path></svg></div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>const slider = document.querySelector(".input-range");
+
+function updateSlider(color = "white") {
+    const percent =
+        ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+
+    slider.style.background = `
+        linear-gradient(
+            to right,
+            ${color} ${percent}%,
+            #535353 ${percent}%
+        )
+    `;
+}
+
+// Initial state
+updateSlider();
+
+// While dragging
+slider.addEventListener("input", () => {
+    updateSlider(slider.matches(":hover") ? "#1DB954" : "white");
+});
+
+// Mouse enters
+slider.addEventListener("mouseenter", () => {
+    updateSlider("#1DB954");
+});
+
+// Mouse leaves
+slider.addEventListener("mouseleave", () => {
+    updateSlider("white");
+});</script>
+<script>const progressBar = document.querySelector(".progress-bar");
+
+function updateProgressBar() {
+    const percent =
+        ((progressBar.value - progressBar.min) /
+        (progressBar.max - progressBar.min)) * 100;
+
+    progressBar.style.background = `
+        linear-gradient(
+            to right,
+            white ${percent}%,
+            #535353 ${percent}%
+        )
+    `;
+}
+
+// Initial fill
+updateProgressBar();
+
+// Update while dragging
+progressBar.addEventListener("input", updateProgressBar);</script>
+</body>
+</html>
